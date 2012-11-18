@@ -1,0 +1,30 @@
+!!! 5
+%html
+  %head
+    %title Onebillioneuro
+    =stylesheet_link_tag    "application", :media => "all"
+    =javascript_include_tag "application"
+    =csrf_meta_tags
+  %body
+    #top
+      -if current_user
+        .user
+          ="#{current_user.username}"
+          =image_tag("user.png",width: 25)
+        .but
+          =link_to "Log out", logout_path
+      -else
+        .but
+          = link_to "Sign up", signup_path
+          = link_to "log in", login_path
+    #content
+      #head
+        %h1 OneBillionEuro
+        %i "Сколько бы Вам было лет если бы вы не знали сколько вам лет."
+      =yield
+    #footer
+      .link_to_pay
+        =link_to image_tag("pasha.jpg",width: 27), pasha_index_path
+        =link_to image_tag("peg.jpg",width: 40), pigeon_index_path
+        =link_to image_tag("region.jpg",width: 27), region_index_path
+        =link_to image_tag("urn.jpg",width: 27), urn_index_path

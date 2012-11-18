@@ -1,0 +1,167 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or vendor/assets/stylesheets of plugins, if any, can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the top of the
+ * compiled file, but it's generally better to create a new file per style scope.
+ *
+ *= require_self
+ *= require_tree .
+ */
+
+body{
+ background: #418bbf;
+
+}
+
+.new{
+
+    position: absolute;
+    width: 280px;
+    left: 50%;
+    top: 50%;
+    margin-left: -150px;
+    margin-top: -100px;
+    background: #5cb642;
+    box-shadow: 0px 3px 3px 5px #1e7627;
+    padding: 20px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.new input{
+    border-radius: 5px;
+    font-size: 12pt;
+}
+
+#top{
+ border-bottom: 3px solid #3c4a96;
+ background: rgba(37, 52, 163, 0.88);
+ position: fixed;
+ width: 100%;
+ top: 0px;
+ left:0px;
+ font-size: 15pt;
+ padding-bottom: 10px;
+ padding-top: 10px;
+ box-shadow: 0 2px 5px rgba(37, 52, 163, 0.88);
+
+}
+
+
+.but a{
+ color: #3c4a96;
+ border: 2px solid rgba(37, 52, 163, 0.88);
+ border-radius: 6px;
+ padding: 5px 7px;
+ background: #269999;
+    box-shadow: 0px 1px 2px #268099;
+    text-decoration: none;
+}
+
+.user{
+  color: rgb(14, 26, 79);
+  float:right;
+  padding-right: 10px;
+
+}
+#top a:hover{
+  color: #093c04;
+
+}
+
+#footer {
+    position: fixed; /* Фиксированное положение */
+    left: 0; bottom: 0; /* Левый нижний угол */
+    padding: 10px; /* Поля вокруг текста */
+    background: rgba(23, 42, 163, 0.56);
+    color: #fff;
+    width: 100%;
+}
+
+#content{
+  background: #5cb642;
+  width: 80%;
+  font-size: 14pt;
+  margin: 0 auto 50px;
+  padding: 40px 10px 10px 10px;
+  box-shadow: 0 2px 5px rgba(37, 52, 163, 0.88);
+  background: -moz-linear-gradient(top,#5cb642,#79bb66);
+  background: -webkit-gradient(linear, left top, left bottom, from(#5cb642), to(#79bb66));
+}
+
+.pay_description{
+    padding: 10px;
+    border: 1px solid #113311;
+    background: #359e47;
+    border-radius: 3px;
+    font-family: "Times New Roman";
+    font-style: normal;
+    font-size: 13pt;
+
+}
+
+#head h1{
+    color: #113311;
+    text-shadow: 0px 1px 5px #113311;
+    font-size: 60pt;
+    font-family: Comic Sans;
+    font-variant: small-caps;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    text-align: center;
+}
+
+#head{
+    border-bottom: 1px solid #113311;
+    padding-bottom: 40px;
+
+}
+
+.author{
+    float:right;
+    font-size: 11.5pt;
+}
+
+.description{
+    box-shadow: 0px 3px 5px #575820;
+    padding:20px;
+    border-radius: 0px 0px 10px 10px;
+
+}
+
+#content p{
+  padding: 10px;
+  border: 1px solid #113311;
+  background: #359e47;
+  border-radius: 3px;
+  font-family: "Times New Roman";
+  font-style: normal;
+  font-size: 13pt;
+
+}
+
+.warning{
+  background: #ae1a17;
+  border: 3px solid #971815;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.title{
+ margin-top: 10px;
+ box-shadow: 0px 3px 5px #575820;
+ padding: 10px;
+ border-radius: 10px 10px 0 0;
+ background: #d5803c;
+ color: rgba(16, 17, 24, 0.62);
+}
+
+
+
+
+
+
